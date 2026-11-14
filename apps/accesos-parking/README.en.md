@@ -11,10 +11,23 @@ with AI detection).
   detector and OCR (MIT licensed).
 - **Vehicles.** A list of vehicles with their type (employee, visitor, supplier…). Gates can open on their
   own for the types and hours you choose (iSmartGate / Gogogate2, Home Assistant, Tasmota or webhook).
+- **Quick search.** Type a plate at the top (shortcut `/`) and see at once whether it's inside, who it
+  belongs to and its latest passages.
+- **Blacklist.** Plates to watch: they show in red across the app, raise an alert when they come in and
+  the gate never opens on its own for them.
+- **Visitors.** Pre-register who is coming: when their plate is read you see who they are and who they're
+  visiting, and no unknown-plate alert is raised.
+- **Statistics.** Peak hours, hourly occupancy, length of stay, most frequent vehicles and plate reading
+  quality.
+- **Reception screen.** A full-screen view for a reception or gatehouse monitor that refreshes on its own.
 - **Alerts.** Through Microsoft Teams or webhook, plus Home Assistant integration.
 - **Personal data.** Deleted automatically after 30 days, as the Spanish data protection agency (AEPD)
   recommends.
 - **Web-based setup.** Cameras, NVR, gates, users, integrations and an installation guide.
+- **Light or dark theme.** Follows your system or the one you pick in your account menu. Works on mobile
+  too.
+
+The app's screens are in Spanish.
 
 ## Requirements
 
@@ -33,3 +46,10 @@ with AI detection).
 
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
+
+## What's new in 1.1.0
+
+- New interface, matching Hub365: grouped side menu with your account inside, light or dark theme and a
+  better mobile layout.
+- Quick search, blacklist, pre-registered visitors, occupancy statistics and a reception screen.
+- Updating from 1.0.0 keeps all your data.

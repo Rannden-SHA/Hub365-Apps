@@ -12,10 +12,22 @@ de **Frigate** (NVR con detección por IA).
 - **Vehículos.** Lista de vehículos con su tipo (empleado, visita, proveedor…). Las puertas se pueden
   abrir solas para los tipos y el horario que elijas (iSmartGate / Gogogate2, Home Assistant,
   Tasmota o webhook).
+- **Búsqueda rápida.** Escribe una matrícula arriba (atajo `/`) y ves al momento si está dentro,
+  de quién es y sus últimos pasos.
+- **Lista negra.** Matrículas a vigilar: salen en rojo en toda la app, avisan al entrar y la puerta
+  nunca se abre sola para ellas.
+- **Visitas.** Prerregistra a quien va a venir: al leer su matrícula ves quién es y a quién viene a
+  ver, y no salta el aviso de matrícula desconocida.
+- **Estadísticas.** Horas punta, ocupación por hora, tiempo de estancia, vehículos más frecuentes y
+  calidad de la lectura de matrículas.
+- **Pantalla de recepción.** Vista a pantalla completa para un monitor de recepción o garita, que se
+  actualiza sola.
 - **Avisos.** Por Microsoft Teams o webhook, e integración con Home Assistant.
 - **Datos personales.** Se borran solos a los 30 días, como recomienda la AEPD.
 - **Configuración desde la web.** Cámaras, NVR, puertas, usuarios, integraciones y una guía de
   instalación.
+- **Tema claro u oscuro.** Sigue el del sistema o el que elijas en el menú de tu cuenta. Se usa
+  también desde el móvil.
 
 ## Requisitos
 
@@ -34,3 +46,11 @@ de **Frigate** (NVR con detección por IA).
 
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
+
+## Novedades de la 1.1.0
+
+- Interfaz nueva, igual que la de Hub365: menú lateral por grupos con tu cuenta dentro, tema claro u
+  oscuro y mejor en el móvil.
+- Búsqueda rápida, lista negra, visitas prerregistradas, estadísticas de ocupación y pantalla de
+  recepción.
+- Al actualizar desde la 1.0.0 se conservan todos los datos.

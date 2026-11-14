@@ -1,0 +1,151 @@
+LICENCIA DE LAS APPS DEL CATÁLOGO DE HUB365
+(Hub365 App Catalog License)
+
+ENGLISH VERSION — below. If the two versions differ, the Spanish version
+prevails.
+
+Titular: NextCode Agency
+Contacto: info@nextcodeagency.com · https://nextcodeagency.com
+
+© 2026 NextCode Agency. Todos los derechos reservados.
+
+========================================================================
+VERSIÓN EN ESPAÑOL
+========================================================================
+
+1. Qué cubre
+
+Esta licencia cubre todo el contenido de este repositorio (el índice
+del catálogo, las fichas, el código y los paquetes de las apps, las
+capturas y la documentación) y las imágenes de contenedor de las apps
+que se publican en ghcr.io/rannden-sha (las «Apps»).
+
+Las Apps son software propietario de NextCode Agency. No son software
+libre ni de código abierto: se licencian, no se venden. Que el código o
+las imágenes se puedan descargar públicamente no da ningún derecho de
+uso por sí mismo.
+
+2. Uso permitido
+
+Puedes instalar y usar una App solo:
+
+  a) desde el catálogo de apps de Hub365, en un servidor con una
+     licencia de Hub365 válida que incluya esa App, y mientras la
+     licencia siga vigente; o
+  b) en las condiciones de un acuerdo por escrito con NextCode Agency.
+
+El uso queda limitado a la organización titular de la licencia y a su
+propio funcionamiento interno.
+
+3. Lo que no está permitido
+
+Salvo autorización previa y por escrito de NextCode Agency, no puedes:
+
+  - copiar, redistribuir, publicar, vender, alquilar, prestar o
+    sublicenciar las Apps, su código o sus imágenes de contenedor;
+  - modificarlas, traducirlas, adaptarlas ni crear obras derivadas;
+  - descompilarlas, desensamblarlas o aplicarles ingeniería inversa,
+    salvo en lo que la ley permita expresamente pese a esta limitación;
+  - usarlas sin una licencia de Hub365 que las incluya, ni eludir,
+    desactivar o alterar la comprobación de licencia o de identidad;
+  - quitar o alterar los avisos de propiedad, de marca o de licencia.
+
+4. Componentes de terceros
+
+Las Apps incluyen bibliotecas y modelos de terceros que conservan sus
+propias licencias (por ejemplo MIT, BSD o Apache 2.0). Esta licencia no
+limita los derechos que esas licencias te dan sobre esos componentes.
+
+5. Garantía y responsabilidad
+
+Las Apps se entregan «tal cual». En la medida en que la ley lo permita,
+NextCode Agency no responde de los daños indirectos, el lucro cesante ni
+la pérdida de datos derivados de su uso. Las garantías y la
+responsabilidad frente a los clientes con licencia son las de su
+contrato o licencia de Hub365.
+
+6. Fin de la licencia
+
+El derecho de uso de una App termina cuando caduca o se revoca la
+licencia de Hub365 que la incluye, o si incumples esta licencia. Al
+terminar, debes dejar de usar la App. Tus datos son tuyos: puedes
+exportarlos o conservar las copias que haga Hub365.
+
+7. Ley y jurisdicción
+
+Esta licencia se rige por la ley española. Para cualquier controversia,
+y salvo que la ley disponga otro fuero imperativo, las partes se
+someten a los juzgados y tribunales del domicilio de NextCode Agency.
+
+Para contratar una App, ampliar tu licencia o pedir cualquier otro uso:
+info@nextcodeagency.com.
+
+========================================================================
+ENGLISH VERSION
+========================================================================
+
+1. Scope
+
+This license covers everything in this repository (the catalog index,
+the details pages, the apps' code and packages, the screenshots and the
+documentation) and the container images of the apps published at
+ghcr.io/rannden-sha (the "Apps").
+
+The Apps are proprietary software of NextCode Agency. They are not free
+or open source software: they are licensed, not sold. Being able to
+download the code or the images publicly does not, by itself, grant any
+right to use them.
+
+2. Permitted use
+
+You may install and use an App only:
+
+  a) from the Hub365 app catalog, on a server with a valid Hub365
+     license that includes that App, and while that license is in
+     force; or
+  b) under the terms of a written agreement with NextCode Agency.
+
+Use is limited to the organization that holds the license and to its
+own internal operations.
+
+3. Restrictions
+
+Unless NextCode Agency has given prior written permission, you may not:
+
+  - copy, redistribute, publish, sell, rent, lend or sublicense the
+    Apps, their code or their container images;
+  - modify, translate or adapt them, or create derivative works;
+  - decompile, disassemble or reverse engineer them, except to the
+    extent the law expressly allows it despite this restriction;
+  - use them without a Hub365 license that includes them, or bypass,
+    disable or alter the license or identity checks;
+  - remove or alter any ownership, trademark or license notices.
+
+4. Third-party components
+
+The Apps include third-party libraries and models that keep their own
+licenses (for example MIT, BSD or Apache 2.0). This license does not
+limit the rights those licenses give you over those components.
+
+5. Warranty and liability
+
+The Apps are provided "as is". To the extent permitted by law, NextCode
+Agency is not liable for indirect damages, loss of profits or loss of
+data arising from their use. Warranties and liability towards licensed
+customers are those of their Hub365 contract or license.
+
+6. Termination
+
+The right to use an App ends when the Hub365 license that includes it
+expires or is revoked, or if you breach this license. On termination you
+must stop using the App. Your data is yours: you can export it or keep
+the backups Hub365 makes.
+
+7. Governing law
+
+This license is governed by Spanish law. Unless the law sets a different
+mandatory venue, the parties submit to the courts of NextCode Agency's
+place of business.
+
+To get an App, extend your license or ask about any other use:
+info@nextcodeagency.com.

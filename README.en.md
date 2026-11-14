@@ -96,6 +96,9 @@ Docker apps install on their own if Hub365 controls Docker on your server; if no
 Every app in the catalog needs a **Hub365 license that includes it**. In the catalog, each app shows
 whether your license already includes it.
 
+The apps are proprietary software of NextCode Agency: they may not be copied, redistributed or modified, or
+used without a license that includes them. The full terms are in [LICENSE](LICENSE).
+
 ## Contact
 
 Want to get an app, extend your license or ask for a demo?

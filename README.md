@@ -96,6 +96,9 @@ fichero `compose` listo para arrancarla.
 Cada app del catálogo necesita una **licencia de Hub365 que la incluya**. En el catálogo, cada app indica si
 tu licencia ya la incluye.
 
+Las apps son software propietario de NextCode Agency: no se pueden copiar, redistribuir ni modificar, ni usar
+sin una licencia que las incluya. Las condiciones completas están en [LICENSE](LICENSE).
+
 ## Contacto
 
 ¿Quieres contratar una app, ampliar tu licencia o pedir una demostración?

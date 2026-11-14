@@ -1,0 +1,84 @@
+{
+  "schema": "hub365-catalog@1",
+  "generated_at": "2026-11-14T12:00:00Z",
+  "apps": [
+    {
+      "slug": "hola-hub365",
+      "name": {
+        "es": "Hola Hub365",
+        "en": "Hello Hub365"
+      },
+      "description": {
+        "es": "App de ejemplo: saluda al usuario con la identidad firmada de Hub365 y comprueba la licencia.",
+        "en": "Sample app: greets the user with Hub365's signed identity and checks the license."
+      },
+      "icon": "hand",
+      "color": "#0B57D0",
+      "publisher": "NextCode Agency",
+      "homepage": "https://nextcodeagency.com",
+      "readme": {
+        "es": "apps/hola-hub365/README.md",
+        "en": "apps/hola-hub365/README.en.md"
+      },
+      "version": "1.0.0",
+      "min_hub365": "2.2.0",
+      "kind": "service",
+      "license": "required",
+      "module": "app:hola-hub365",
+      "identity": true,
+      "service": {
+        "command": "{python} app.py --port {port}",
+        "requirements": [],
+        "health_path": "/health",
+        "env": {
+          "HOLA_SALUDO": "Hola"
+        }
+      },
+      "package": {
+        "url": "dist/hola-hub365-1.0.0.zip",
+        "sha256": "f7bcd2c29363d0e34f0206fa28c67b6b190472be863405a3d154d0d772fad9c8",
+        "size": 3487
+      },
+      "readme_sha256": {
+        "es": "0b6383a93d8ae2d3c722ad50f1f10de126cbbae232006e617426519df49b09ee",
+        "en": "5cf17fad7eef7142f502f09bc50ecff34f184a09de55ca8d1ca7f1651cd46806"
+      }
+    },
+    {
+      "slug": "accesos-parking",
+      "name": {
+        "es": "Accesos Parking",
+        "en": "Parking Access"
+      },
+      "description": {
+        "es": "Entradas y salidas del parking por matrícula con Frigate, apertura de puertas y avisos.",
+        "en": "Parking entries and exits by number plate with Frigate, gate opening and alerts."
+      },
+      "icon": "car",
+      "color": "#1E8E3E",
+      "publisher": "NextCode Agency",
+      "homepage": "https://nextcodeagency.com",
+      "readme": {
+        "es": "apps/accesos-parking/README.md",
+        "en": "apps/accesos-parking/README.en.md"
+      },
+      "version": "1.0.0",
+      "min_hub365": "2.2.0",
+      "kind": "docker",
+      "license": "required",
+      "module": "app:accesos-parking",
+      "identity": true,
+      "docker": {
+        "image": "ghcr.io/rannden-sha/accesos-parking:1.0.0",
+        "compose": "# Accesos Parking (catálogo de Hub365). Hub365 rellena las variables ${...}.\nservices:\n  accesos-parking:\n    image: ${HUB365_IMAGE}\n    restart: unless-stopped\n    init: true\n    environment:\n      DATA_DIR: /data\n      TZ: Europe/Madrid\n      HUB365_IDENTITY_SECRET: ${HUB365_IDENTITY_SECRET}\n    env_file:\n      - path: ./app.env          # opcional: credenciales de MQTT y Frigate (ver .env.example de la app)\n        required: false\n    volumes:\n      - accesos-parking-data:/data\n    ports:\n      - \"${HUB365_BIND:-127.0.0.1}:${HUB365_PORT:-8000}:8000\"\n    healthcheck:\n      test: [\"CMD\", \"python\", \"-c\", \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/salud', timeout=4)\"]\n      interval: 60s\n      timeout: 5s\n\nvolumes:\n  accesos-parking-data:\n",
+        "service": "accesos-parking",
+        "internal_port": 8000,
+        "upstream": "http://accesos-parking:8000"
+      },
+      "readme_sha256": {
+        "es": "dbe254922763d444911e2a3cfd8a9721c5635e5236d4a576c625f474c97a8ab5",
+        "en": "07cdc9fd13b8af4ef727add04d8ae53675d05ab232838235f3b7ddb01426f4f4"
+      }
+    }
+  ]
+}

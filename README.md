@@ -52,11 +52,11 @@ se pueden abrir solas para los vehículos autorizados.
 <table>
   <tr>
     <td width="50%"><img src="docs/img/accesos-parking-panel.jpg" alt="Panel de Accesos Parking"></td>
-    <td width="50%"><img src="docs/img/accesos-parking-registro.jpg" alt="Registro de entradas y salidas"></td>
+    <td width="50%"><img src="docs/img/accesos-parking-estadisticas.jpg" alt="Estadísticas de ocupación de Accesos Parking"></td>
   </tr>
   <tr>
-    <td align="center"><sub>Panel: actividad del día, quién está dentro y últimos 7 días</sub></td>
-    <td align="center"><sub>Registro de pasos, con filtros y exportación a Excel</sub></td>
+    <td align="center"><sub>Panel (tema oscuro): actividad del día comparada con ayer, aviso de lista negra, visitas y quién está dentro</sub></td>
+    <td align="center"><sub>Estadísticas (tema claro): horas punta, ocupación por hora y tiempo de estancia</sub></td>
   </tr>
 </table>
 
@@ -64,9 +64,14 @@ se pueden abrir solas para los vehículos autorizados.
 - **Segunda lectura**: si la cámara no lee bien la matrícula, la app la vuelve a leer en el vídeo.
 - **Personas y vehículos** por tipo (empleado, visita, proveedor…), con apertura automática de puertas por
   tipo y horario (iSmartGate / Gogogate2, Home Assistant, Tasmota o webhook).
+- **Búsqueda rápida, lista negra y visitas**: una matrícula vetada sale en rojo, avisa al entrar y la puerta
+  no se abre sola; las visitas prerregistradas no saltan como desconocidas y se sabe a quién vienen a ver.
+- **Estadísticas y pantalla de recepción**: horas punta, ocupación y estancias, y una vista a pantalla
+  completa para la garita que se actualiza sola.
 - **Avisos** por Microsoft Teams o webhook, e integración con Home Assistant.
 - **Protección de datos**: los pasos y las fotos se borran solos a los 30 días.
 - **Todo se configura desde la web**: cámaras, grabador, puertas, usuarios y una guía de instalación.
+- **Tema claro u oscuro** y adaptada al móvil, con el mismo aspecto que Hub365.
 
 **Necesita:** Hub365 2.2 o posterior (Windows o Linux), Docker para el contenedor de la app (unos 2 GB
 de RAM) y Frigate 0.14 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)

@@ -52,11 +52,11 @@ authorized vehicles.
 <table>
   <tr>
     <td width="50%"><img src="docs/img/accesos-parking-panel.jpg" alt="Parking Access dashboard"></td>
-    <td width="50%"><img src="docs/img/accesos-parking-registro.jpg" alt="Log of entries and exits"></td>
+    <td width="50%"><img src="docs/img/accesos-parking-estadisticas.jpg" alt="Parking Access occupancy statistics"></td>
   </tr>
   <tr>
-    <td align="center"><sub>Dashboard: today's activity, who's inside and the last 7 days</sub></td>
-    <td align="center"><sub>Passage log, with filters and Excel export</sub></td>
+    <td align="center"><sub>Dashboard (dark theme): today's activity compared with yesterday, blacklist alert, visitors and who's inside</sub></td>
+    <td align="center"><sub>Statistics (light theme): peak hours, hourly occupancy and length of stay</sub></td>
   </tr>
 </table>
 
@@ -64,9 +64,15 @@ authorized vehicles.
 - **Second reading**: if the camera misreads the plate, the app reads it again from the video.
 - **People and vehicles** by type (employee, visitor, supplier…), with automatic gate opening by type and
   hours (iSmartGate / Gogogate2, Home Assistant, Tasmota or webhook).
+- **Quick search, blacklist and visitors**: a blacklisted plate shows in red, raises an alert when it comes in
+  and the gate won't open on its own; pre-registered visitors aren't flagged as unknown and you see who
+  they're visiting.
+- **Statistics and reception screen**: peak hours, occupancy and length of stay, plus a full-screen view
+  for the gatehouse that refreshes on its own.
 - **Alerts** through Microsoft Teams or webhook, plus Home Assistant integration.
 - **Data protection**: passages and photos are deleted automatically after 30 days.
 - **Everything is set up from the web**: cameras, recorder, gates, users and an installation guide.
+- **Light or dark theme** and mobile-friendly, with the same look as Hub365.
 
 **Requires:** Hub365 2.2 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
 and Frigate 0.14 or later with number plate recognition. → [Full details](apps/accesos-parking/README.en.md)

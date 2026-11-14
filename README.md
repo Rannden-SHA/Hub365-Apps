@@ -38,10 +38,10 @@ este catálogo, lees su ficha y las instalas sin tocar la línea de comandos. Un
 
 ## Apps disponibles
 
-| | App | Para qué sirve | Funciona en |
+| | App | Para qué sirve | Qué necesita |
 |:-:|---|---|---|
-| 🚗 | [**Accesos Parking**](#-accesos-parking) | Entradas y salidas del parking por matrícula, apertura de puertas y avisos | Linux con Docker |
-| 👋 | [**Hola Hub365**](#-hola-hub365) | App de ejemplo para conocer cómo funciona el catálogo | Windows y Linux |
+| 🚗 | [**Accesos Parking**](#-accesos-parking) | Entradas y salidas del parking por matrícula, apertura de puertas y avisos | Hub365 en Windows o Linux, y Docker para la app |
+| 👋 | [**Hola Hub365**](#-hola-hub365) | App de ejemplo para conocer cómo funciona el catálogo | Hub365 en Windows o Linux, nada más |
 
 ### 🚗 Accesos Parking
 
@@ -68,8 +68,8 @@ se pueden abrir solas para los vehículos autorizados.
 - **Protección de datos**: los pasos y las fotos se borran solos a los 30 días.
 - **Todo se configura desde la web**: cámaras, grabador, puertas, usuarios y una guía de instalación.
 
-**Necesita:** Hub365 2.2 o posterior en Linux con Docker (unos 2 GB de RAM) y Frigate 0.14 o posterior
-con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
+**Necesita:** Hub365 2.2 o posterior (Windows o Linux), Docker para el contenedor de la app (unos 2 GB
+de RAM) y Frigate 0.14 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
 
 ### 👋 Hola Hub365
 

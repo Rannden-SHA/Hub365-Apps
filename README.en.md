@@ -38,10 +38,10 @@ this catalog, read their details and install them without touching the command l
 
 ## Available apps
 
-| | App | What it's for | Runs on |
+| | App | What it's for | What it needs |
 |:-:|---|---|---|
-| 🚗 | [**Parking Access**](#-parking-access) | Parking entries and exits by number plate, gate opening and alerts | Linux with Docker |
-| 👋 | [**Hello Hub365**](#-hello-hub365) | Sample app to see how the catalog works | Windows and Linux |
+| 🚗 | [**Parking Access**](#-parking-access) | Parking entries and exits by number plate, gate opening and alerts | Hub365 on Windows or Linux, and Docker for the app |
+| 👋 | [**Hello Hub365**](#-hello-hub365) | Sample app to see how the catalog works | Hub365 on Windows or Linux, nothing else |
 
 ### 🚗 Parking Access
 
@@ -68,8 +68,8 @@ authorized vehicles.
 - **Data protection**: passages and photos are deleted automatically after 30 days.
 - **Everything is set up from the web**: cameras, recorder, gates, users and an installation guide.
 
-**Requires:** Hub365 2.2 or later on Linux with Docker (about 2 GB of RAM) and Frigate 0.14 or later with
-number plate recognition. → [Full details](apps/accesos-parking/README.en.md)
+**Requires:** Hub365 2.2 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
+and Frigate 0.14 or later with number plate recognition. → [Full details](apps/accesos-parking/README.en.md)
 
 ### 👋 Hello Hub365
 

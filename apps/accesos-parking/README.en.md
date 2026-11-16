@@ -47,6 +47,19 @@ The app's screens are in Spanish.
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
 
+## What's new in 1.2.0
+
+- **Backups**: manual and scheduled backups (with or without photos, optionally encrypted), download,
+  restore checked before it is applied, and import/export of people and vehicles (CSV) and of the settings
+  without secrets.
+- **Extra recording for unknown vehicles**: when a plate belongs to nobody, Frigate is asked for a few more
+  seconds of video; it stops early if the plate turns out to be known.
+- **Frigate recording and detection settings** from the app (days kept, seconds before and after,
+  thresholds), with a backup first and rollback if Frigate rejects them.
+- Better reading: parked cars are no longer mixed up with the one driving past, fewer arrivals split in two
+  and fewer false "unknown" vehicles.
+- Accordion side menu: opening a group closes the others.
+
 ## What's new in 1.1.0
 
 - New interface, matching Hub365: grouped side menu with your account inside, light or dark theme and a

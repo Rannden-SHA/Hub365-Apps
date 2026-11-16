@@ -47,6 +47,19 @@ de **Frigate** (NVR con detección por IA).
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
 
+## Novedades de la 1.2.0
+
+- **Copias de seguridad**: copias manuales y automáticas (con o sin fotos, cifradas si quieres), descarga,
+  restauración comprobada antes de aplicarse e importación/exportación de personas y vehículos (CSV) y de
+  la configuración sin secretos.
+- **Grabación extra para vehículos desconocidos**: si la matrícula no es de nadie, pide a Frigate unos
+  segundos más de vídeo; se corta antes si al final resulta conocida.
+- **Ajustes de grabación y detección de Frigate** desde la app (días que se guardan, segundos antes y
+  después, umbrales), con copia previa y vuelta atrás si Frigate no los acepta.
+- Mejor lectura: coches aparcados que ya no se confunden con el que pasa, menos llegadas partidas en dos y
+  menos falsos «desconocidos».
+- Menú lateral en acordeón: al abrir un grupo se cierran los demás.
+
 ## Novedades de la 1.1.0
 
 - Interfaz nueva, igual que la de Hub365: menú lateral por grupos con tu cuenta dentro, tema claro u

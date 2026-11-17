@@ -74,7 +74,7 @@ authorized vehicles.
 - **Everything is set up from the web**: cameras, recorder, gates, users and an installation guide.
 - **Light or dark theme** and mobile-friendly, with the same look as Hub365.
 
-**Requires:** Hub365 2.2 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
+**Requires:** Hub365 2.3 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
 and Frigate 0.14 or later with number plate recognition. → [Full details](apps/accesos-parking/README.en.md)
 
 ### 👋 Hello Hub365

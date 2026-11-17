@@ -31,7 +31,7 @@ The app's screens are in Spanish.
 
 ## Requirements
 
-- Hub365 2.2 or later, **on Linux with Docker**. The app is a container and needs about 2 GB of RAM for
+- Hub365 2.3 or later (1.3.0 works with 2.2), **on Linux with Docker**. The app is a container and needs about 2 GB of RAM for
   the second reading.
 - Frigate 0.14 or later with number plate recognition (LPR) and its MQTT. The Home Assistant one works.
 - A Hub365 license that includes **Parking Access** (`app:accesos-parking`).
@@ -46,6 +46,24 @@ The app's screens are in Spanish.
 
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
+
+## What's new in 1.4.0
+
+Requires **Hub365 2.3**: upgrade Hub365 first and then the app.
+
+- **Hub365 decides the role**: who is administrator, manager or read-only in Parking Access is chosen in
+  Hub365 › *Apps* › **Parking Access** › **Access** (or in each person's *Apps* tab) and applies on the
+  next request. Extra permissions (open the gate, configure) stay in the app. The roles there were before
+  the first change are saved in the audit log.
+- **Each person is matched by their Hub365 account**, not by email: nobody can take over someone else's
+  record by changing their email. Administrators can unlink a record.
+- **Deduced direction**: when the camera can't tell whether the car was coming in or going out but the plate
+  matches a registered vehicle exactly, the direction is deduced from its last pass and it doesn't wait for
+  review. The gate doesn't open automatically on those passes.
+- **Old Spanish and foreign plates**: provincial plates (e.g. IB-1234-BC) and any plate that matches a
+  registered vehicle exactly are recognised. Unknown foreign plates are kept for review. *Settings ›
+  Recording and detection* sets the format Frigate accepts.
+- **Edit vehicles** from the person's record, without deleting and re-creating them.
 
 ## What's new in 1.3.0
 

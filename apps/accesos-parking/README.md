@@ -31,7 +31,7 @@ de **Frigate** (NVR con detección por IA).
 
 ## Requisitos
 
-- Hub365 2.2 o posterior, **en Linux con Docker**. La app es un contenedor y necesita unos 2 GB de RAM
+- Hub365 2.3 o posterior (la 1.3.0 funciona con la 2.2), **en Linux con Docker**. La app es un contenedor y necesita unos 2 GB de RAM
   para la segunda lectura.
 - Frigate 0.14 o posterior con la detección de matrículas (LPR) y su MQTT. El de Home Assistant sirve.
 - Una licencia de Hub365 que incluya **Accesos Parking** (`app:accesos-parking`).
@@ -46,6 +46,24 @@ de **Frigate** (NVR con detección por IA).
 
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
+
+## Novedades de la 1.4.0
+
+Necesita **Hub365 2.3**: actualiza primero Hub365 y después la app.
+
+- **El rol lo decide Hub365**: quién es administrador, gestor o solo consulta en Accesos Parking se elige
+  en Hub365 › *Aplicaciones* › **Accesos Parking** › **Acceso** (o en la pestaña *Aplicaciones* de cada
+  persona) y se aplica en la siguiente petición. Los permisos extra (abrir la puerta, configurar) siguen
+  en la app. Antes del primer cambio se guardan en la auditoría los roles que había.
+- **Cada persona va por su cuenta de Hub365**, no por su correo: nadie puede quedarse con la ficha de otro
+  cambiándose el correo. Los administradores pueden desvincular una ficha.
+- **Sentido deducido**: si la cámara no sabe si el coche entraba o salía pero la matrícula coincide
+  exactamente con un vehículo dado de alta, se deduce de su último paso y no queda pendiente de revisar.
+  La puerta no se abre sola en esos pasos.
+- **Matrículas españolas antiguas y extranjeras**: se reconocen las provinciales (p. ej. IB‑1234‑BC) y
+  cualquier matrícula que coincida exactamente con un vehículo dado de alta. Las extranjeras de nadie se
+  guardan para revisar. En *Configuración › Grabación y detección* se ajusta el formato que acepta Frigate.
+- **Editar los vehículos** desde la ficha de la persona, sin borrarlos y volver a crearlos.
 
 ## Novedades de la 1.3.0
 

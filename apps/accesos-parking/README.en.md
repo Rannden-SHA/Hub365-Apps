@@ -47,6 +47,14 @@ The app's screens are in Spanish.
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
 
+## What's new in 1.3.0
+
+- **Custom fields for people**: create from the app the data you need to keep for each person (for example
+  "Remote", "Parking space" or "Card"), as text, number, date, yes/no or a list of options, without waiting
+  for a new version. They show on every person's record, are filled in only where needed, can be shown as a
+  column in the list, are searchable and go in the Excel export and import.
+- **Side menu**: the group of the section you are in is highlighted.
+
 ## What's new in 1.2.0
 
 - **Backups**: manual and scheduled backups (with or without photos, optionally encrypted), download,

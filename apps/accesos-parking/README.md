@@ -47,6 +47,14 @@ de **Frigate** (NVR con detección por IA).
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
 
+## Novedades de la 1.3.0
+
+- **Campos propios de las personas**: crea desde la app los datos que necesites guardar de cada persona
+  (por ejemplo «Mando», «Plaza» o «Tarjeta»), de tipo texto, número, fecha, sí/no o lista de opciones, sin
+  esperar a una versión nueva. Salen en la ficha de todas las personas, se rellenan solo donde haga falta,
+  pueden verse como columna en la lista, se buscan y van en la exportación e importación a Excel.
+- **Menú lateral**: el grupo del apartado en el que estás se ve resaltado.
+
 ## Novedades de la 1.2.0
 
 - **Copias de seguridad**: copias manuales y automáticas (con o sin fotos, cifradas si quieres), descarga,

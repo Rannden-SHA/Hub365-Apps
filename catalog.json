@@ -1,6 +1,6 @@
 {
   "schema": "hub365-catalog@1",
-  "generated_at": "2026-11-16T14:33:00Z",
+  "generated_at": "2026-11-17T14:06:52Z",
   "apps": [
     {
       "slug": "hola-hub365",
@@ -62,22 +62,22 @@
         "es": "apps/accesos-parking/README.md",
         "en": "apps/accesos-parking/README.en.md"
       },
-      "version": "1.2.0",
+      "version": "1.3.0",
       "min_hub365": "2.2.0",
       "kind": "docker",
       "license": "required",
       "module": "app:accesos-parking",
       "identity": true,
       "docker": {
-        "image": "ghcr.io/rannden-sha/accesos-parking:1.2.0",
+        "image": "ghcr.io/rannden-sha/accesos-parking:1.3.0",
         "compose": "# Accesos Parking (catálogo de Hub365). Hub365 rellena las variables ${...}.\nservices:\n  accesos-parking:\n    image: ${HUB365_IMAGE}\n    restart: unless-stopped\n    init: true\n    environment:\n      DATA_DIR: /data\n      TZ: Europe/Madrid\n      HUB365_IDENTITY_SECRET: ${HUB365_IDENTITY_SECRET}\n    env_file:\n      - path: ./app.env          # opcional: credenciales de MQTT y Frigate (ver .env.example de la app)\n        required: false\n    volumes:\n      - accesos-parking-data:/data\n    ports:\n      - \"${HUB365_BIND:-127.0.0.1}:${HUB365_PORT:-8000}:8000\"\n    healthcheck:\n      test: [\"CMD\", \"python\", \"-c\", \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/salud', timeout=4)\"]\n      interval: 60s\n      timeout: 5s\n\nvolumes:\n  accesos-parking-data:\n",
         "service": "accesos-parking",
         "internal_port": 8000,
         "upstream": "http://accesos-parking:8000"
       },
       "readme_sha256": {
-        "es": "50f07131c1dc6dc5c2ea90f7db34b061223b83dc6624eb1b727155a0a7ad7720",
-        "en": "a895d3b508e384e39e08d6ad0ce75a6a6a66a008cfac4c2fe79c27bbeffc9dd7"
+        "es": "1e4fbb62671749d5a494e1686403812d92b7017bd1f5182939f62e463b010b86",
+        "en": "4b9aab0700914246db121986b1a5f734b6a8e97761f228ad5044e667e2945924"
       }
     }
   ]

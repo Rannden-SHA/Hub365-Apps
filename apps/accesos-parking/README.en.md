@@ -33,7 +33,7 @@ The app's screens are in Spanish.
 
 - Hub365 2.3 or later (1.3.0 works with 2.2), **on Linux with Docker**. The app is a container and needs about 2 GB of RAM for
   the second reading.
-- Frigate 0.14 or later with number plate recognition (LPR) and its MQTT. The Home Assistant one works.
+- Frigate 0.16 or later with number plate recognition (LPR) and its MQTT. The Home Assistant one works.
 - A Hub365 license that includes **Parking Access** (`app:accesos-parking`).
 
 ## Installing from Hub365
@@ -46,6 +46,22 @@ The app's screens are in Spanish.
 
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
+
+## What's new in 1.5.0
+
+- **Gate log** (iSmartGate only): Parking Access copies the event log from the iSmartGate's local web page
+  using the controller's user and tells you, for each opening, **who or what opened it**: the iSmartGate app
+  (with the user and whether it was remote or local), Parking Access (automatic or manual), a remote control
+  or another external route. It also shows how long it stayed open and any obstructions.
+- **Each car with its opening**: the first car through gets the origin; the next ones show as "Came in
+  behind #N". It also flags cars with no recorded opening and openings with no car. New **Opening** column
+  in the passes log.
+- **Matching** between iSmartGate users and people in Parking Access: the app suggests them and an
+  administrator confirms them.
+- Alerts for a gate left open too long, a missing close event and a remote control used by someone whose key
+  is the app; periods with no data (for example, when the connection drops) are marked.
+- Turn it on in the iSmartGate controller's page (**Read the event log**); it's off by default. Parking
+  Access only reads the log: it never clears it or changes anything on the device.
 
 ## What's new in 1.4.0
 

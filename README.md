@@ -74,7 +74,7 @@ se pueden abrir solas para los vehículos autorizados.
 - **Tema claro u oscuro** y adaptada al móvil, con el mismo aspecto que Hub365.
 
 **Necesita:** Hub365 2.3 o posterior (Windows o Linux), Docker para el contenedor de la app (unos 2 GB
-de RAM) y Frigate 0.14 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
+de RAM) y Frigate 0.16 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
 
 ### 👋 Hola Hub365
 

@@ -33,7 +33,7 @@ de **Frigate** (NVR con detección por IA).
 
 - Hub365 2.3 o posterior (la 1.3.0 funciona con la 2.2), **en Linux con Docker**. La app es un contenedor y necesita unos 2 GB de RAM
   para la segunda lectura.
-- Frigate 0.14 o posterior con la detección de matrículas (LPR) y su MQTT. El de Home Assistant sirve.
+- Frigate 0.16 o posterior con la detección de matrículas (LPR) y su MQTT. El de Home Assistant sirve.
 - Una licencia de Hub365 que incluya **Accesos Parking** (`app:accesos-parking`).
 
 ## Instalación desde Hub365
@@ -46,6 +46,22 @@ de **Frigate** (NVR con detección por IA).
 
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
+
+## Novedades de la 1.5.0
+
+- **Registro de la puerta** (solo iSmartGate): Accesos copia el registro de eventos de la web local del
+  iSmartGate con el usuario del controlador y dice, en cada apertura, **quién o qué la abrió**: la app del
+  iSmartGate (con el usuario y si fue en remoto o en local), Accesos (automática o manual), un mando u otra
+  vía externa. Muestra también cuánto estuvo abierta y las obstrucciones.
+- **Cada coche con su apertura**: el primero que pasa se queda con el origen; los siguientes salen como
+  «Entró detrás de #N». También avisa de los coches sin apertura registrada y de las aperturas sin coche.
+  Nueva columna **Apertura** en el Registro de pasos.
+- **Equivalencias** entre los usuarios del iSmartGate y las personas de Accesos: la app las propone y un
+  administrador las confirma.
+- Avisos de puerta abierta demasiado tiempo, cierre no registrado y mando usado por quien tiene la llave en
+  la app; los periodos sin datos (por ejemplo, si cae la conexión) se marcan.
+- Se activa en la ficha del controlador iSmartGate (**Leer el registro de eventos**); viene desactivado.
+  Accesos solo consulta el registro: nunca lo borra ni cambia nada del aparato.
 
 ## Novedades de la 1.4.0
 

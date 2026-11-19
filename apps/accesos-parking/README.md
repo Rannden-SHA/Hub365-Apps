@@ -47,6 +47,11 @@ de **Frigate** (NVR con detección por IA).
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
 
+## Novedades de la 1.5.1
+
+- La lectura del registro de la puerta espera lo que tarda el iSmartGate en dar un día con muchos
+  eventos (en la 1.5.0 la primera copia podía quedarse en «tiempo de espera agotado»).
+
 ## Novedades de la 1.5.0
 
 - **Registro de la puerta** (solo iSmartGate): Accesos copia el registro de eventos de la web local del

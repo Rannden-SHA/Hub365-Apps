@@ -47,6 +47,11 @@ The app's screens are in Spanish.
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
 
+## What's new in 1.5.1
+
+- Reading the gate log waits as long as the iSmartGate takes to return a day with many events (in 1.5.0
+  the first copy could stop at "timed out").
+
 ## What's new in 1.5.0
 
 - **Gate log** (iSmartGate only): Parking Access copies the event log from the iSmartGate's local web page

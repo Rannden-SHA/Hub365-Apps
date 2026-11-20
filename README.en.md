@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Hub365-2.2%20or%20later-635bff" alt="Hub365 2.2 or later">
-  <img src="https://img.shields.io/badge/apps-3-1E8E3E" alt="3 apps">
+  <img src="https://img.shields.io/badge/apps-4-1E8E3E" alt="4 apps">
   <img src="https://img.shields.io/badge/license-required-E37400" alt="License required">
 </p>
 
@@ -41,6 +41,7 @@ this catalog, read their details and install them without touching the command l
 | | App | What it's for | What it needs |
 |:-:|---|---|---|
 | 🚗 | [**Parking Access**](#-parking-access) | Parking entries and exits by number plate, gate opening and alerts | Hub365 on Windows or Linux, and Docker for the app |
+| ✅ | [**Approvals**](#-approvals) | Approval workflows: request types with a form, stages, working-hour deadlines, absences, notifications and a PDF receipt | Hub365 on Windows or Linux, and Docker for the app |
 | 📚 | [**Documentation**](#-documentation) | Document management: shelves, books and pages with an editor, uploaded documents, revisions and search | Hub365 on Windows or Linux, and Docker for the app |
 | 👋 | [**Hello Hub365**](#-hello-hub365) | Sample app to see how the catalog works | Hub365 on Windows or Linux, nothing else |
 
@@ -77,6 +78,24 @@ authorized vehicles.
 
 **Requires:** Hub365 2.3 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
 and Frigate 0.16 or later with number plate recognition. → [Full details](apps/accesos-parking/README.en.md)
+
+### ✅ Approvals
+
+Approval workflows with **request types** (form, stages and versions), **deadlines** in working hours and a
+**PDF receipt** that can be verified.
+
+- **Forms and flows**: 25 field types, calculated fields and conditions; stages with a person, a group, the
+  manager, the head of the department or an authority matrix, in parallel, with a quorum or one after another; a
+  simulator and 10 built-in templates.
+- **Deciding**: approve, reject, return for changes, reassign, consult, sign and approve several at once.
+- **Deadlines and absences**: calendars with holidays, reminders, escalation and substitutes while you are away.
+- **Notifications**: bell, email with "Review and decide", daily digest, Microsoft Teams and webhooks.
+- **Hash chain** on every request, **reports** with CSV and Excel export, an **API** with tokens, **audit log**
+  and **backups**.
+- With **Hub365 2.4** it uses Hub365's directory (with job title and manager), its bell and its email.
+
+**Needs:** Hub365 2.3 or later (Windows or Linux) and Docker for the app container.
+→ [Full details](apps/aprobaciones/README.en.md)
 
 ### 📚 Documentation
 

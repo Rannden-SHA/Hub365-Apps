@@ -1,6 +1,6 @@
 {
   "schema": "hub365-catalog@1",
-  "generated_at": "2026-11-20T16:28:08Z",
+  "generated_at": "2026-11-20T21:55:17Z",
   "apps": [
     {
       "slug": "hola-hub365",
@@ -114,6 +114,49 @@
       "readme_sha256": {
         "es": "dda6bd4cf874abb50c4c6397021244cf9603abc6d30d595f6551b34918513914",
         "en": "92e00a8d72d131394430ef320bcbff1af7d7c28b13ecb2cacb54f6d30926ec45"
+      }
+    },
+    {
+      "slug": "aprobaciones",
+      "name": {
+        "es": "Aprobaciones",
+        "en": "Approvals"
+      },
+      "description": {
+        "es": "Flujos de aprobación: tipos de solicitud con formulario, etapas, plazos laborables, ausencias, avisos y justificante PDF.",
+        "en": "Approval workflows: request types with a form, stages, working-hour deadlines, absences, notifications and a PDF receipt."
+      },
+      "icon": "badge-check",
+      "color": "#0B57D0",
+      "publisher": "NextCode Agency",
+      "homepage": "https://nextcodeagency.com",
+      "readme": {
+        "es": "apps/aprobaciones/README.md",
+        "en": "apps/aprobaciones/README.en.md"
+      },
+      "version": "1.0.0",
+      "min_hub365": "2.3.0",
+      "kind": "docker",
+      "license": "required",
+      "module": "app:aprobaciones",
+      "identity": true,
+      "docker": {
+        "image": "ghcr.io/rannden-sha/aprobaciones:1.0.0",
+        "compose": "# Aprobaciones (catálogo de Hub365). Hub365 rellena las variables ${...}.\nservices:\n  aprobaciones:\n    image: ${HUB365_IMAGE}\n    restart: unless-stopped\n    init: true\n    environment:\n      DATA_DIR: /data\n      TZ: Europe/Madrid\n      HUB365_IDENTITY_SECRET: ${HUB365_IDENTITY_SECRET}\n      HUB365_INTERNAL_URL: ${HUB365_INTERNAL_URL:-}\n      HUB365_INTERNAL_CERT_SHA256: ${HUB365_INTERNAL_CERT_SHA256:-}\n      HUB365_PUBLIC_URL: ${HUB365_PUBLIC_URL:-}\n      HUB365_APP_SLUG: ${HUB365_APP_SLUG:-aprobaciones}\n      HUB365_API_VERSION: ${HUB365_API_VERSION:-}\n      APR_MAX_UPLOAD_MB: \"100\"   # tope de cualquier subida (los ajustes de la app no pueden pasarlo)\n    extra_hosts:\n      - \"host.docker.internal:host-gateway\"\n    volumes:\n      - aprobaciones-data:/data\n    ports:\n      - \"${HUB365_BIND:-127.0.0.1}:${HUB365_PORT:-8000}:8000\"\n    healthcheck:\n      test: [\"CMD\", \"python\", \"-c\", \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)\"]\n      interval: 60s\n      timeout: 5s\n\nvolumes:\n  aprobaciones-data:\n",
+        "service": "aprobaciones",
+        "internal_port": 8000,
+        "upstream": "http://aprobaciones:8000"
+      },
+      "readme_sha256": {
+        "es": "c14d41bb4d90917beae86107d55ccc794bdcf9e364d1c67f82e23dd9a7951d40",
+        "en": "6bc4b604d7b2fbf9392ba83f3483e04d35dd69fb551ba4fc239e78219122ceed"
+      },
+      "hub365_api": {
+        "permissions": [
+          "directory",
+          "notify",
+          "mail"
+        ]
       }
     }
   ]

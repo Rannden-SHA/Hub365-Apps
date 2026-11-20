@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Hub365-2.2%20o%20posterior-635bff" alt="Hub365 2.2 o posterior">
-  <img src="https://img.shields.io/badge/apps-3-1E8E3E" alt="3 apps">
+  <img src="https://img.shields.io/badge/apps-4-1E8E3E" alt="4 apps">
   <img src="https://img.shields.io/badge/licencia-necesaria-E37400" alt="Licencia necesaria">
 </p>
 
@@ -41,6 +41,7 @@ este catálogo, lees su ficha y las instalas sin tocar la línea de comandos. Un
 | | App | Para qué sirve | Qué necesita |
 |:-:|---|---|---|
 | 🚗 | [**Accesos Parking**](#-accesos-parking) | Entradas y salidas del parking por matrícula, apertura de puertas y avisos | Hub365 en Windows o Linux, y Docker para la app |
+| ✅ | [**Aprobaciones**](#-aprobaciones) | Flujos de aprobación: tipos de solicitud con formulario, etapas, plazos laborables, ausencias, avisos y justificante PDF | Hub365 en Windows o Linux, y Docker para la app |
 | 📚 | [**Documentación**](#-documentación) | Gestión documental: estanterías, libros y páginas con editor, documentos subidos, revisiones y búsqueda | Hub365 en Windows o Linux, y Docker para la app |
 | 👋 | [**Hola Hub365**](#-hola-hub365) | App de ejemplo para conocer cómo funciona el catálogo | Hub365 en Windows o Linux, nada más |
 
@@ -76,6 +77,24 @@ se pueden abrir solas para los vehículos autorizados.
 
 **Necesita:** Hub365 2.3 o posterior (Windows o Linux), Docker para el contenedor de la app (unos 2 GB
 de RAM) y Frigate 0.16 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
+
+### ✅ Aprobaciones
+
+Flujos de aprobación con **tipos de solicitud** (formulario, etapas y versiones), **plazos** en horas laborables
+y un **justificante PDF** que se puede verificar.
+
+- **Formularios y flujos**: 25 tipos de campo, campos calculados y condiciones; etapas con una persona, un grupo,
+  el responsable, el responsable del departamento o una matriz de límites, en paralelo, con quórum o una tras
+  otra; simulador y 10 plantillas de serie.
+- **Decidir**: aprobar, rechazar, devolver para cambios, reasignar, consultar, firmar y aprobar varias a la vez.
+- **Plazos y ausencias**: calendarios con festivos, recordatorios, escalado y suplentes mientras estás fuera.
+- **Avisos**: campana, correo con «Revisar y decidir», resumen diario, Microsoft Teams y webhooks.
+- **Cadena de huellas** en cada solicitud, **informes** con exportación a CSV y Excel, **API** con tokens,
+  **auditoría** y **copias de seguridad**.
+- Con **Hub365 2.4** usa el directorio de Hub365 (con cargo y responsable), su campana y su correo.
+
+**Necesita:** Hub365 2.3 o posterior (Windows o Linux) y Docker para el contenedor de la app.
+→ [Ficha completa](apps/aprobaciones/README.md)
 
 ### 📚 Documentación
 

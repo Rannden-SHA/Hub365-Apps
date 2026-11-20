@@ -47,6 +47,18 @@ The app's screens are in Spanish.
 The data (database and photos) goes in the `accesos-parking-data` volume. It's kept when you update and
 when you uninstall, unless you choose to delete it.
 
+## What's new in 1.5.2
+
+- **A car that passes once is a single passage.** Sometimes a car leaving showed up as two exits: Frigate
+  tracked the same car with two objects (for example, a car parked in the background that briefly "takes"
+  the box of the one leaving) and the second one arrived without a plate or without a direction. It is now
+  merged into the existing passage, also when its plate arrives later (second reading), and the passage that
+  stays keeps the best reading and the direction the camera saw.
+- Two **almost identical** readings from the same camera within a few seconds (one different character, or
+  letters that get mixed up such as 0/O or 6/G) count as the same car. New setting in *Settings ›
+  Recognition*: **Seconds to merge similar readings** (30 by default; 0 = don't merge).
+- Two different cars leaving one after the other, or an exit and an entry, are still separate passages.
+
 ## What's new in 1.5.1
 
 - Reading the gate log waits as long as the iSmartGate takes to return a day with many events (in 1.5.0

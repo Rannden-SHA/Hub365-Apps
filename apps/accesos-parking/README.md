@@ -47,6 +47,18 @@ de **Frigate** (NVR con detección por IA).
 Los datos (base de datos y fotos) van en el volumen `accesos-parking-data`. Se conservan al actualizar
 y al desinstalar, salvo que elijas borrarlos.
 
+## Novedades de la 1.5.2
+
+- **Un coche que pasa una vez es un solo paso.** A veces, al salir un coche, aparecían dos salidas: Frigate
+  seguía el mismo coche con dos objetos (por ejemplo, un coche aparcado al fondo que «se queda» un momento el
+  recuadro del que sale) y el segundo llegaba sin matrícula o sin sentido. Ahora se une al paso que ya existe,
+  también cuando su matrícula llega después (segunda lectura), y el paso que queda se lleva la mejor lectura y
+  el sentido que vio la cámara.
+- Dos lecturas **casi iguales** de la misma cámara en pocos segundos (un carácter distinto, o letras que se
+  confunden como 0/O o 6/G) cuentan como el mismo coche. Ajuste nuevo en *Configuración › Reconocimiento*:
+  **Segundos para unir lecturas parecidas** (30 por defecto; 0 = no unirlas).
+- Dos coches distintos que salen seguidos, o una salida y una entrada, siguen siendo pasos distintos.
+
 ## Novedades de la 1.5.1
 
 - La lectura del registro de la puerta espera lo que tarda el iSmartGate en dar un día con muchos

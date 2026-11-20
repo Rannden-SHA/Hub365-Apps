@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Hub365-2.2%20or%20later-635bff" alt="Hub365 2.2 or later">
-  <img src="https://img.shields.io/badge/apps-2-1E8E3E" alt="2 apps">
+  <img src="https://img.shields.io/badge/apps-3-1E8E3E" alt="3 apps">
   <img src="https://img.shields.io/badge/license-required-E37400" alt="License required">
 </p>
 
@@ -41,6 +41,7 @@ this catalog, read their details and install them without touching the command l
 | | App | What it's for | What it needs |
 |:-:|---|---|---|
 | 🚗 | [**Parking Access**](#-parking-access) | Parking entries and exits by number plate, gate opening and alerts | Hub365 on Windows or Linux, and Docker for the app |
+| 📚 | [**Documentation**](#-documentation) | Document management: shelves, books and pages with an editor, uploaded documents, revisions and search | Hub365 on Windows or Linux, and Docker for the app |
 | 👋 | [**Hello Hub365**](#-hello-hub365) | Sample app to see how the catalog works | Hub365 on Windows or Linux, nothing else |
 
 ### 🚗 Parking Access
@@ -76,6 +77,23 @@ authorized vehicles.
 
 **Requires:** Hub365 2.3 or later (Windows or Linux), Docker for the app's container (about 2 GB of RAM)
 and Frigate 0.16 or later with number plate recognition. → [Full details](apps/accesos-parking/README.en.md)
+
+### 📚 Documentation
+
+Your company's documentation organised like a library: **shelves, books, chapters and pages**, with a full
+editor and each topic's **documents** (PDF, Word, Excel, images…) in the same place.
+
+- **Full editor**: tables, task lists, callouts, code, pasted images, embedded PDFs and links between pages.
+- **Documents**: attachments on every page, a tab with all of a book's files and **multi-upload** where each
+  file becomes a page (Word, Markdown, HTML, text, PDF…).
+- **Revisions, drafts and templates**: compare and restore versions, automatic draft while you type, a notice
+  when someone else is editing the same page, and built-in or your own templates.
+- **Search** in the content and in the text of attached PDFs and Word files; **import and export** (HTML,
+  Markdown, ZIP, printing) and a **trash**.
+- **Who sees what** by Hub365 department, **audit log** and **backups**.
+
+**Needs:** Hub365 2.3 or later (Windows or Linux) and Docker for the app container.
+→ [Full details](apps/documentacion/README.en.md)
 
 ### 👋 Hello Hub365
 

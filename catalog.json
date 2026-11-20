@@ -79,6 +79,42 @@
         "es": "f324da69d78f4e0e0a3b45cfef5a45fa2e8faefad5bb3b858182cde96a39ee06",
         "en": "e41955c63fe66d1e3f970132b61927c1f16fd117a2aa25f48b727a5d7c395df6"
       }
+    },
+    {
+      "slug": "documentacion",
+      "name": {
+        "es": "Documentación",
+        "en": "Documentation"
+      },
+      "description": {
+        "es": "Gestión documental: estanterías, libros y páginas con editor, documentos subidos, revisiones y búsqueda.",
+        "en": "Document management: shelves, books and pages with an editor, uploaded documents, revisions and search."
+      },
+      "icon": "book-open",
+      "color": "#0B57D0",
+      "publisher": "NextCode Agency",
+      "homepage": "https://nextcodeagency.com",
+      "readme": {
+        "es": "apps/documentacion/README.md",
+        "en": "apps/documentacion/README.en.md"
+      },
+      "version": "1.0.0",
+      "min_hub365": "2.3.0",
+      "kind": "docker",
+      "license": "required",
+      "module": "app:documentacion",
+      "identity": true,
+      "docker": {
+        "image": "ghcr.io/rannden-sha/documentacion:1.0.0",
+        "compose": "# Documentación (catálogo de Hub365). Hub365 rellena las variables ${...}.\nservices:\n  documentacion:\n    image: ${HUB365_IMAGE}\n    restart: unless-stopped\n    init: true\n    environment:\n      DATA_DIR: /data\n      TZ: Europe/Madrid\n      HUB365_IDENTITY_SECRET: ${HUB365_IDENTITY_SECRET}\n      DOC_MAX_UPLOAD_MB: \"100\"   # tope de cualquier subida (los ajustes de la app no pueden pasarlo)\n    volumes:\n      - documentacion-data:/data\n    ports:\n      - \"${HUB365_BIND:-127.0.0.1}:${HUB365_PORT:-8000}:8000\"\n    healthcheck:\n      test: [\"CMD\", \"python\", \"-c\", \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)\"]\n      interval: 60s\n      timeout: 5s\n\nvolumes:\n  documentacion-data:\n",
+        "service": "documentacion",
+        "internal_port": 8000,
+        "upstream": "http://documentacion:8000"
+      },
+      "readme_sha256": {
+        "es": "dda6bd4cf874abb50c4c6397021244cf9603abc6d30d595f6551b34918513914",
+        "en": "92e00a8d72d131394430ef320bcbff1af7d7c28b13ecb2cacb54f6d30926ec45"
+      }
     }
   ]
 }

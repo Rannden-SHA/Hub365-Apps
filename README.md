@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Hub365-2.2%20o%20posterior-635bff" alt="Hub365 2.2 o posterior">
-  <img src="https://img.shields.io/badge/apps-2-1E8E3E" alt="2 apps">
+  <img src="https://img.shields.io/badge/apps-3-1E8E3E" alt="3 apps">
   <img src="https://img.shields.io/badge/licencia-necesaria-E37400" alt="Licencia necesaria">
 </p>
 
@@ -41,6 +41,7 @@ este catálogo, lees su ficha y las instalas sin tocar la línea de comandos. Un
 | | App | Para qué sirve | Qué necesita |
 |:-:|---|---|---|
 | 🚗 | [**Accesos Parking**](#-accesos-parking) | Entradas y salidas del parking por matrícula, apertura de puertas y avisos | Hub365 en Windows o Linux, y Docker para la app |
+| 📚 | [**Documentación**](#-documentación) | Gestión documental: estanterías, libros y páginas con editor, documentos subidos, revisiones y búsqueda | Hub365 en Windows o Linux, y Docker para la app |
 | 👋 | [**Hola Hub365**](#-hola-hub365) | App de ejemplo para conocer cómo funciona el catálogo | Hub365 en Windows o Linux, nada más |
 
 ### 🚗 Accesos Parking
@@ -75,6 +76,24 @@ se pueden abrir solas para los vehículos autorizados.
 
 **Necesita:** Hub365 2.3 o posterior (Windows o Linux), Docker para el contenedor de la app (unos 2 GB
 de RAM) y Frigate 0.16 o posterior con lectura de matrículas. → [Ficha completa](apps/accesos-parking/README.md)
+
+### 📚 Documentación
+
+La documentación de la empresa ordenada como una biblioteca: **estanterías, libros, capítulos y páginas**, con
+un editor completo y los **documentos** de cada tema (PDF, Word, Excel, imágenes…) en el mismo sitio.
+
+- **Editor completo**: tablas, listas de tareas, recuadros de aviso, código, imágenes pegadas, PDF incrustados
+  y enlaces entre páginas.
+- **Documentos**: adjuntos en cada página, pestaña con todos los ficheros del libro y **subida múltiple** en la
+  que cada fichero se convierte en una página (Word, Markdown, HTML, texto, PDF…).
+- **Revisiones, borradores y plantillas**: compara y recupera versiones, borrador automático mientras escribes,
+  aviso si otra persona edita la misma página, y plantillas propias o de serie.
+- **Búsqueda** en el contenido y en el texto de los PDF y Word adjuntos; **importar y exportar** (HTML,
+  Markdown, ZIP, impresión) y **papelera**.
+- **Quién ve qué** por departamento de Hub365, **auditoría** y **copias de seguridad**.
+
+**Necesita:** Hub365 2.3 o posterior (Windows o Linux) y Docker para el contenedor de la app.
+→ [Ficha completa](apps/documentacion/README.md)
 
 ### 👋 Hola Hub365
 
